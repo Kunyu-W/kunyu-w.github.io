@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #085078;
+    background: -webkit-linear-gradient(to right, #85D8CE, #085078);
+    background: linear-gradient(to right, #85D8CE, #085078);
+    font-family: Montserrat, sans-serif;
+}
+
+div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 200;
+    color: #fff;
+    opacity: 0.6;
+}
