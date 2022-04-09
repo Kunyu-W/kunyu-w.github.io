@@ -1,0 +1,19 @@
+@import url("themecolor.css");
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--mainfontcolor);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mainhighlight);
+    /* border-radius: 5px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--mainhighlight);
+}

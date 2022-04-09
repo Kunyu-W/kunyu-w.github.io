@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block style %}{% endblock style %}
+    <title>{% block title %}{% endblock title %}</title>
+    {% include "/components/meta.html" %}
+    {% include "/components/fonts.html" %}
+    {% include "/components/favicon.html" %}
+    {% include "/components/googleanalytic.html" %}
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    {% block scripts %}{% endblock scripts %}
+</head>
+
+<body>
+    {% block body %}{% endblock body %}
+</body>
+
+</html>

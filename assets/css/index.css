@@ -1,22 +1,291 @@
+@import url("scrollbar.css");
+@import url("selection.css");
+@import url("backtotop.css");
+@import url("themecolor.css");
+
 body, html {
     margin: 0;
     padding: 0;
-    background: #085078;
-    background: -webkit-linear-gradient(to right, #85D8CE, #085078);
-    background: linear-gradient(to right, #85D8CE, #085078);
-    font-family: Montserrat, sans-serif;
+    background-color: var(--mainbg);
+    font-family: Montserrat, source-han-sans-cjk-sc, source-han-sans-cjk-ja, sans-serif;
 }
 
-div {
+section#home {
     justify-content: center;
+    justify-items: center;
     align-items: center;
     display: flex;
+}
+
+section#home {
+    background-image: url("/assets/img/covers/maincover1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 100vh;
 }
 
-h1 {
-    font-size: 6rem;
-    font-weight: 200;
-    color: #fff;
-    opacity: 0.6;
+section#home div.myinfo {
+    position: relative;
+    background-color: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px;
+    width: 100%;
+    opacity: 0;
 }
+
+section#home div.infopic {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+}
+
+section#home div.infopic img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-color: #2c3e50;
+    border-right-color: #fee3e1;
+    border-bottom-color: #c3e1ff;
+    border-left-color: #fd746c;
+    border-width: 5px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+h1.myname {
+    font-weight: 600;
+    font-size: 1.6rem;
+    cursor: default;
+    width: 12rem;
+    margin: auto;
+}
+
+h1.myname:hover {
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    transition-duration: .3s;
+    color: var(--mainhighlight);
+}
+
+h3.mydegrees {
+    font-weight: 200;
+    text-align: center;
+}
+
+h3.seconddegree {
+    padding-bottom: 10px;
+}
+
+section#home div.mysocial {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+
+section#home div.mysocial a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+section#home div.socialdecorationline {
+    height: 1px;
+    width: 192px;
+    margin: auto;
+    background-color: var(--mainfontcolor);
+}
+
+svg.social {
+    height: 24px;
+    width: 24px;
+    fill: var(--mainfontcolor);
+}
+
+svg.social:hover {
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    transition-duration: .3s;
+    fill: var(--mainhighlight);
+}
+
+div.scrolldown {
+    position: absolute;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    stroke: var(--mainbg);
+}
+
+div.scrolldown:hover {
+    stroke: var(--lightred);
+    transition: .3s;
+}
+
+section#projects {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.container {
+    padding-top: 30px;
+}
+
+div.proj {
+    border-radius: 10px;
+    transition: all .3s;
+    padding: 10px;
+}
+
+div.proj:hover {
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05), 2px 4px 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+div.proj .detail {
+    overflow: hidden;
+    max-height: 10vh;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a.readmore {
+    background-color: var(--hoverrow);
+    border-radius: 5px;
+    padding: .2rem;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+a.readmore:hover {
+    background-color: var(--mainhighlight);
+    color: var(--mainbg);
+}
+
+.row img {
+    width: 100%;
+    height: 100%;
+}
+
+h3.more {
+    font-size: 0.8rem;
+}
+
+h3.more > a {
+    font-size: 1rem;
+}
+
+iframe {
+    resize: both;
+}
+
+iframe.sound {
+    height: 240px;
+    width: 100%;
+}
+
+.archanime, .tabanime, .codeanime {
+    opacity: 0;
+    transition: all .8s ease-out;
+}
+
+.archtxt, .tabtxt, .codetxt {
+    transform: translateX(-40px);
+}
+
+.archimg, .tabimg, .codeimg {
+    transform: translateX(40px);
+}
+
+div.magicshow {
+    opacity: 1;
+    transform: none;
+}
+
+h1, h2, h3, p, a, ol, ul, li {
+    color: var(--mainfontcolor);
+    text-align: left;
+    transition: all .3s;
+}
+
+blockquote {
+    padding-left: 1rem;
+    margin-left: 0rem;
+    border-left: solid #888888 3px;
+}
+
+blockquote p {
+    font-size: .8rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    width: auto;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h3.more {
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 200;
+    width: auto;
+}
+
+ul, ol, li {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+ol, ul {
+    margin-top: -10px;
+}
+
+b {
+    font-weight: 400;
+}
+
+a {
+    font-size: 0.8rem;
+}
+
+a:hover {
+    color: var(--mainhighlight);
+}
+
+hr {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--mainfontcolor);
+}
+
+/* snow effect */
+/* div.snow-container {
+    position: fixed;
+    z-index: 9999;
+} */
+/* end snow effect */

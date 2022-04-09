@@ -1,0 +1,30 @@
+@import url("themecolor.css");
+
+a#backtotop {
+    /* display: inline-block; */
+    /* background-color: #FF9800; */
+    width: 20px;
+    /* height: 40px; */
+    /* text-align: center; */
+    /* border-radius: 4px; */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    stroke: var(--mainfontcolor);
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    /* visibility: hidden; */
+    z-index: 1000;
+}
+
+a#backtotop:hover {
+    cursor: pointer;
+    stroke: var(--mainhighlight);
+    transition: .3s;
+    /* background-color: #333; */
+}
+
+a#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+}
