@@ -18,7 +18,7 @@ section#home {
 }
 
 section#home {
-    background-image: url("/assets/img/covers/maincover1.jpg");
+    background-image: url("/assets/img/covers/maincover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -27,7 +27,7 @@ section#home {
 
 section#home div.myinfo {
     position: relative;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     padding: 20px;
@@ -100,7 +100,7 @@ section#home div.mysocial a {
 
 section#home div.socialdecorationline {
     height: 1px;
-    width: 192px;
+    width: 240px;
     margin: auto;
     background-color: var(--mainfontcolor);
 }
@@ -159,7 +159,7 @@ div.proj .detail {
 }
 
 a.readmore {
-    background-color: var(--hoverrow);
+    background-color: var(--mainhighlight);
     border-radius: 5px;
     padding: .2rem;
     transition: all .3s;
@@ -167,7 +167,7 @@ a.readmore {
 }
 
 a.readmore:hover {
-    background-color: var(--mainhighlight);
+    background-color: var(--mainselection);
     color: var(--mainbg);
 }
 

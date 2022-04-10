@@ -125,15 +125,16 @@
 
 #navbar a:hover {
     /* border-bottom-color: #2c3e50; */
-    color: #fd746c;
+    color: var(--mainselection);
 }
 
 #navbar .active {
     /* color: #fd746c; */
-    background-color: #fd746c;
+    background-color: var(--mainselection);
+    color: var(--mainbg) !important;
 }
 
 #navbar .active:hover {
-    color: #fee3e1;
+    color: var(--mainhighlight);
     /* background-color: #fd746c; */
 }

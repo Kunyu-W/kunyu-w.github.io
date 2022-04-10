@@ -31,6 +31,10 @@
     text-decoration: none;
 }
 
+#footer a.exlink {
+    text-decoration: underline;
+}
+
 #footer a:hover svg {
     fill: var(--mainhighlight);
 }
