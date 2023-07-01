@@ -1,7 +1,4 @@
-@import url("scrollbar.css");
-@import url("selection.css");
-@import url("backtotop.css");
-@import url("themecolor.css");
+@import url(main.css);
 
 body, html {
     margin: 0;
@@ -33,31 +30,35 @@ section#home div.myinfo {
     padding: 20px;
     width: 100%;
     opacity: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myinfo h1, .myinfo h2, .myinfo h3 {
+    margin: 10px auto;
 }
 
 section#home div.infopic {
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    display: flex;
-    margin: 20px;
-}
-
-section#home div.infopic img {
+    background-image: url('/assets/img/authorinfo/touxiang.jpg');
     position: relative;
+    margin: 20px;
     height: 100px;
     width: 100px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-    border-top-color: #2c3e50;
-    border-right-color: #fee3e1;
-    border-bottom-color: #c3e1ff;
-    border-left-color: #fd746c;
+    border-top-color: var(--lightred);
+    border-right-color: var(--mainhighlight);
+    border-bottom-color: var(--mainbg);
+    border-left-color: var(--mainselection);
     border-width: 5px;
     border-style: solid;
     box-sizing: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1.myname {
@@ -65,7 +66,6 @@ h1.myname {
     font-size: 1.6rem;
     cursor: default;
     width: 12rem;
-    margin: auto;
 }
 
 h1.myname:hover {
@@ -76,7 +76,7 @@ h1.myname:hover {
 }
 
 h3.mydegrees {
-    font-weight: 200;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -193,16 +193,16 @@ iframe.sound {
     width: 100%;
 }
 
-.archanime, .tabanime, .codeanime {
+.archanime, .codeanime {
     opacity: 0;
     transition: all .8s ease-out;
 }
 
-.archtxt, .tabtxt, .codetxt {
+.archtxt, .codetxt {
     transform: translateX(-40px);
 }
 
-.archimg, .tabimg, .codeimg {
+.archimg {
     transform: translateX(40px);
 }
 
@@ -237,12 +237,12 @@ h1 {
 h2 {
     font-size: 1.2rem;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h3.more {
@@ -251,13 +251,13 @@ h3.more {
 
 p {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
     width: auto;
 }
 
 ul, ol, li {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 ol, ul {
@@ -283,9 +283,3 @@ hr {
     background-color: var(--mainfontcolor);
 }
 
-/* snow effect */
-/* div.snow-container {
-    position: fixed;
-    z-index: 9999;
-} */
-/* end snow effect */

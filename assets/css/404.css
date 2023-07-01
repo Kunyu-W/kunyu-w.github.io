@@ -1,5 +1,4 @@
-@import url("selection.css");
-@import url("themecolor.css");
+@import url(main.css);
 
 body, html {
     margin-top: 0;
