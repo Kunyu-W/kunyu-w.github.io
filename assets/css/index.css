@@ -193,22 +193,42 @@ iframe.sound {
     width: 100%;
 }
 
-.archanime, .codeanime {
+.rprojanime, .rexpanime, .honoranime {
     opacity: 0;
     transition: all .8s ease-out;
 }
 
-.archtxt, .codetxt {
+.rprojtext, .rexptext {
     transform: translateX(-40px);
 }
 
-.archimg {
+.honortext {
+    transform: translateY(-40px);
+}
+
+.rprojimg {
     transform: translateX(40px);
 }
 
 div.magicshow {
     opacity: 1;
     transform: none;
+}
+
+#honors_awards .proj p {
+    text-align: center;
+}
+
+#honors_awards .proj blockquote {
+    border: none;
+}
+
+#honors_awards .proj hr {
+    width: 50%;
+}
+
+#honors_awards .proj blockquote > p {
+    color: var(--mainselection);
 }
 
 h1, h2, h3, p, a, ol, ul, li {
