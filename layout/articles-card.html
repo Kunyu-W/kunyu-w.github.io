@@ -1,0 +1,66 @@
+{% extends 'cover.html' %}
+
+{% block style %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/articles-card.css" />
+{% endblock style %}
+
+{% block title %}
+    {{ titlename|capitalize }} - Kunyu Wang's Blog
+{% endblock title %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock scripts %}
+
+{% block content %}
+    <div id="offsetheader" style="background-image: url({{ headerimg }});"></div>
+    <div id="content">
+        {% for section in sections %}
+            {% if section['cards'] %}
+                <div class="row">
+                    <h1 class="sectionhead">{{ section['sectionname'] }}</h1>
+                    {% for post in section['posts'] %}
+                        <a class="column" href="{{ post['url'] }}">
+                            <div class="coverimg" style="background-image: url({{ post['cover image'] }});"></div>
+                            <div class="words">
+                                <div class="projtitle">
+                                    <h1>{{ post['title'] }}</h1>
+                                </div>
+                                <div class="projclass">
+                                    <h2>{{ post['tags']|join(', ') }}</h2>
+                                </div>
+                                <div class="projdescription">
+                                    <p>{{ post['abstract'] }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+                <hr>
+            {% else %}
+                <section id="{{ section['sectionname'] }}">
+                    <h1 class="sectiontitle">{{ section['sectionname'] }}</h1>
+                    {% for post in section['posts'] %}
+                        <div class="article">
+                            <a href="{{ post['url'] }}" class="titlehref">
+                                <h1>{{ post['title'] }}</h1>
+                            </a>
+                            <h2>Updated On: {{ post['modify date'] }}</h2>
+                            <p>{{ post['abstract'] }}</p>
+                            <p>
+                                {% if post['cover image'] %}
+                                    <img src="{{ post['cover image'] }}" alt="{{ post['title'] }}">
+                                {% endif %}
+                            </p>
+                            <a href="{{ post['url'] }}" class="readmore">Read More</a>
+                            <hr>
+                        </div>
+                    {% endfor %}
+                </section>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <!-- important to put this at the end -->
+    <script type="text/javascript" class="cards" src="/assets/js/card.js"></script>
+{% endblock content %}

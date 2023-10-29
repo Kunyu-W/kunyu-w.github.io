@@ -1,0 +1,43 @@
+{% extends 'cover.html' %}
+
+{% block style %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/publications.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-grid.min.css" />
+{% endblock style %}
+
+{% block title %}
+    Publications - Kunyu Wang's Blog
+{% endblock title %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock scripts %}
+
+{% block content %}
+    <div id="offsetheader" style="background-image: url({{ headerimg }});"></div>
+    <div id="content">
+        {% for section in sections %}
+            <h1 class="sectiontitle">{{ section['sectionname'] }}</h1>
+            {% for post in section['posts'] %}
+                <div class="article">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12">
+                            <h1>{{ post['title'] }}</h1>
+                            <h2>{{ post['jornal'] }}</h2>
+                            <p>{{ post['author'] }}</p>
+                            <a href="{{ post['url'] }}" class="readmore" target="_blank">Read More</a>
+                        </div>
+                        <div class="col-md-3 col-sm-8">
+                            {% if post['coverimg'] %}
+                                <img src="{{ post['coverimg'] }}" alt="article cover">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <!-- important to put this at the end -->
+{% endblock content %}

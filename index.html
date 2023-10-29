@@ -19,6 +19,23 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600&display=swap" rel="stylesheet">
 <!-- end fonts -->
     <!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 <!-- end favicons snippet -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- jQuery -->
@@ -45,13 +62,13 @@
 <body>
     
     <div class="topnav navori" id="navbar">
-    <a class="homenav" href="/index.html" onclick="closenav()"><img src="/assets/img/logo.svg" />
+    <a class="homenav" href="/index.html" onclick="closenav()"><img src="/assets/img/logo.png" />
         <p>Kunyu WANG</p>
     </a>
     <div class="othernav">
-        <a class="resdown" id="architecturenav" href="/design.html" onclick="closenav()">Research</a>
-        <a class="resdown" id="codingnav" href="/blog.html" onclick="closenav()">Publication</a>
-        <a class="resdown" id="literaturenav" href="/tabs.html" onclick="closenav()">About</a>
+        <a class="resdown" id="researchnav" href="/research.html" onclick="closenav()">Research</a>
+        <a class="resdown" id="publicationsnav" href="/publications.html" onclick="closenav()">Publications</a>
+        <!-- <a class="resdown" id="literaturenav" href="/about.html" onclick="closenav()">About</a> -->
     </div>
     <a class="dropicon" onclick="narrownav()">
         <i class="fa fa-bars"></i>
@@ -564,7 +581,7 @@
         <p>
             <span>
                 <a href="https://orcid.org/0000-0001-8982-0547" target="_blank">
-                    <svg class="social orcid" fill="#30030a" version="1.1" viewBox="0 0 1024 1024">
+                    <svg width="24px" height="24px" class="social orcid" fill="#30030a" version="1.1" viewBox="0 0 1024 1024">
                         <style type="text/css">
                             .st0{fill:#FFFFFF;}
                         </style>
@@ -582,7 +599,7 @@
             </span>
             <span>
                 <a href="https://scholar.google.com/citations?user=5G-f684AAAAJ&hl=zh-CN&authuser=1" target="_blank">
-                    <svg class="social google-scholar" fill="#34090f" viewBox="0 0 1024 1024" version="1.1"
+                    <svg width="24px" height="24px" class="social google-scholar" fill="#34090f" viewBox="0 0 1024 1024" version="1.1"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M512,0C229.2,0,0,229.2,0,512s229.2,512,512,512s512-229.2,512-512S794.8,0,512,0z M418.9,186.2h395.6l-23.7,20.5
                         c0,0.9,0.5,1.8,0.5,2.8v122.9c14,7.9,23.3,22.8,23.3,40V512c0,25.6-20.9,46.5-46.5,46.5s-46.5-20.9-46.5-46.5V372.4
@@ -598,7 +615,7 @@
             </span>
             <span>
                 <a href="https://twitter.com/KunyuWang_Chem" target="_blank">
-                    <svg class="social twitter" fill="#34090f" viewBox="0 0 1024 1024" version="1.1"
+                    <svg width="24px" height="24px" class="social twitter" fill="#34090f" viewBox="0 0 1024 1024" version="1.1"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M1024,195.4c-37.7,16.8-78.2,28-120.7,33.1c43.4-26,76.8-67.2,92.4-116.2c-40.5,24-85.6,41.5-133.4,50.9
                         c-38.3-40.9-92.9-66.3-153.3-66.3c-116,0-210.1,94-210.1,210.1c0,16.4,1.9,32.5,5.5,47.9c-174.6-8.8-329.4-92.4-433-219.5
@@ -611,7 +628,7 @@
             </span>
             <span>
                 <a href="https://www.linkedin.com/in/kunyu-wang-082617203/" target="_blank">
-                    <svg class="social linkedin" fill="#34090f" viewBox="0 0 1024 1024" version="1.1"
+                    <svg width="24px" height="24px" class="social linkedin" fill="#34090f" viewBox="0 0 1024 1024" version="1.1"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M260.096 155.648c0 27.307008-9.899008 50.516992-29.696 69.632-19.796992 19.115008-45.396992 28.672-76.8 28.672-30.036992 0-54.612992-9.556992-73.728-28.672-19.115008-19.115008-28.672-42.324992-28.672-69.632 0-28.672 9.556992-52.224 28.672-70.656 19.115008-18.432 44.372992-27.648 75.776-27.648 31.403008 0 56.32 9.216 74.752 27.648 18.432 18.432 28.331008 41.984 29.696 70.656 0 0 0 0 0 0m-202.752 808.96c0 0 0-632.832 0-632.832 0 0 196.608 0 196.608 0 0 0 0 632.832 0 632.832 0 0-196.608 0-196.608 0 0 0 0 0 0 0m313.344-430.08c0-58.708992-1.364992-126.292992-4.096-202.752 0 0 169.984 0 169.984 0 0 0 10.24 88.064 10.24 88.064 0 0 4.096 0 4.096 0 40.96-68.267008 105.812992-102.4 194.56-102.4 68.267008 0 123.220992 22.868992 164.864 68.608 41.643008 45.739008 62.464 113.664 62.464 203.776 0 0 0 374.784 0 374.784 0 0-196.608 0-196.608 0 0 0 0-350.208 0-350.208 0-91.476992-33.451008-137.216-100.352-137.216-47.787008 0-81.236992 24.576-100.352 73.728-4.096 8.192-6.144 24.576-6.144 49.152 0 0 0 364.544 0 364.544 0 0-198.656 0-198.656 0 0 0 0-430.08 0-430.08 0 0 0 0 0 0" />
@@ -620,7 +637,7 @@
             </span>
             <span>
                 <a href="mailto:kunyuwang95@gmail.com" target="_blank">
-                    <svg class="social mail" fill="#34090f" viewBox="0 0 1024 1024" version="1.1"
+                    <svg width="24px" height="24px" class="social mail" fill="#34090f" viewBox="0 0 1024 1024" version="1.1"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M512.091 166.946c116.242 0 232.484-0.014 348.727 0.007 41.522 0.008 76.321 12.188 94.842 53.167 8.25 18.251 6.5 30.831-13.43 43.256-137.452 85.695-274.125 172.655-410.534 260.014-14.762 9.456-24.638 9.569-39.498 0.041C354.353 435.041 216.033 347.399 77.465 260.14c-12.701-8.002-16.368-15.572-12.01-29.962 9.882-32.627 30.845-52.873 63.868-59.66 13.656-2.806 27.953-3.4 41.966-3.431C284.888 166.83 398.492 166.943 512.091 166.946z" />
@@ -634,9 +651,10 @@
                 </a>
             </span>
         </p>
-        <p>Bachelor of Architecture, Tsinghua University</p>
-        <p>Master of Architecture in Urban Design, Harvard Graduate School of Design</p>
-        <p>2019 - 2022 &#169; Kunyu WANG's Personal Site.</p>
+        <p>Vagelos Institute Postdoctoral Fellow, University of Pennsylvania, 2023-present</p>
+        <p>Ph.D. in Chemistry, Texas A&M University, 2018-2023</p>
+        <p>B.S. in Chemistry, Po-ling Class, Nankai University, 2014-2018</p>
+        <p>2019 - 2023 &#169; Kunyu WANG's Personal Site.</p>
         <p>Exchange Link: <a class="exlink" href="https://www.zmei.moe/" target="_blank">zmei.moe</a></p>
     </div>
 </section>
