@@ -40,9 +40,9 @@
 
 #navbar.navori a.homenav img {
     position: absolute;
-    height: 1.5rem;
-    top: 0.75rem;
-    margin-right: 15px;
+    height: 3rem;
+    top: 0.25rem;
+    /* margin-right: 15px; */
     left: 20%;
 }
 
@@ -88,9 +88,9 @@
 #navbar.navres a.homenav img {
     position: relative;
     float: left;
-    left: 30%;
-    top: 0rem;
-    height: 1rem;
+    left: 45%;
+    top: -0.75rem;
+    height: 2rem;
 }
 
 #navbar.navres a.homenav p {
