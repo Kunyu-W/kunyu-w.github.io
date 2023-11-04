@@ -147,7 +147,7 @@ __publications_infos = [
                 'jornal': 'Angew. Chem. Int. Ed. 2022, 61, e202115585.',
                 'author': 'Han, Z.; Li, J.; Lu, W.; Wang, K.-Y.; Chen, Y.; Zhang, X.; Lin, L.; Han, X.; Teat, S. J.; Frogley, M. D.; Yang, S.; Shi, W.*; Cheng, P.',
                 'url': 'https://onlinelibrary.wiley.com/doi/10.1002/anie.202115585',
-                'coverimg': 'https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202200433',
+                'coverimg': 'https://onlinelibrary.wiley.com/cms/asset/52cee44c-7b40-487d-a0b7-4b2f6cf9dc85/anie202200433-toc-0001-m.jpg',
             },
         ],
     },
@@ -234,7 +234,7 @@ __publications_infos = [
                 'jornal': 'Trends. Chem. 2020, 2, 555-568.',
                 'author': 'Feng, L.‡; Wang, K.-Y.‡; Joseph, E. A.; Zhou, H.-C.*',
                 'url': 'https://www.sciencedirect.com/science/article/pii/S2589597420300289',
-                'coverimg': 'https://www.sciencedirect.com/journal/trends-in-chemistry/vol/2/issue/6',
+                'coverimg': 'https://ars.els-cdn.com/content/image/1-s2.0-S2589597419X00167-cov200h.gif',
             },
             {
                 'title': 'Engineering a Homochiral Metal-Organic Framework based on an Amino Acid for Enantioselective Separation',
