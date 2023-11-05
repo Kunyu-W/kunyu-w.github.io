@@ -1,0 +1,82 @@
+{% extends 'cover.html' %}
+
+{% block style %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/research.css" />
+{% endblock style %}
+
+{% block title %}
+    Research - Kunyu Wang's Blog
+{% endblock title %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock scripts %}
+
+{% block content %}
+    <div id="offsetheader" style="background-image: url({{ headerimg }});">
+        <div class="header-temp">
+            <p>The Research page is WIP.<br>See you soon.</p>
+        </div>
+    </div>
+    <div id="slogan">
+        <div id="slogan-title">
+            <p class="slogan-subtitle">
+                <span class="slogan-subtitle-head">S</span>ustainable
+            </p>
+            <p class="slogan-subtitle">
+                <span class="slogan-subtitle-head">H</span>uman-centric
+            </p>
+            <p class="slogan-subtitle">
+                <span class="slogan-subtitle-head">I</span>nnovation
+            </p>
+            <p class="slogan-subtitle">
+                <span class="slogan-subtitle-head">N</span>anopore
+            </p>
+            <p class="slogan-subtitle">
+                <span class="slogan-subtitle-head">E</span>ngineering
+            </p>
+        </div>
+        <div id="slogan-img">
+            <img src="/assets/img/indexcovers/research3.png" alt="slogan image" />
+        </div>
+        <div id="slogan-content">
+            <p>“For centuries, humans have marveled at the potential locked within porous materials. Yet, it is only in recent years
+                that researchers have gained the ability to delicately regulate and functionalize pores at the nanoscale. Pores have
+                sizes, shapes, hierarchy, heterogeneity, communication, and synergy. Nanopore engineering encompasses a broad range
+                of materials. From hollow molecular cages to metal-organic frameworks (MOFs) filled with hierarchical pores, these
+                structures are the key to creating ordered architectures capable of channeling matter and energy—an essential
+                requirement for catalysis, energy storage, chiral separation and recognition. In essence, nanopore engineering is
+                the art of orchestrating molecules, harnessing the dynamic nature of coordination and covalent bonds to craft
+                functionalized hierarchical structures, from the microscale to the mesoscale and beyond. It is a journey towards a
+                sustainable, human-centric future, where innovation converges with responsibility to shape a world that uses its
+                natural resources more responsibly and efficiently.”</p>
+        </div>
+    </div>
+    <div id="content">
+        <!-- {% for section in sections %}
+                <div class="row">
+                    <h1 class="sectionhead">{{ section['sectionname'] }}</h1>
+                    {% for post in section['posts'] %}
+                        <a class="column" href="{{ post['url'] }}">
+                            <div class="coverimg" style="background-image: url({{ post['cover image'] }});"></div>
+                            <div class="words">
+                                <div class="projtitle">
+                                    <h1>{{ post['title'] }}</h1>
+                                </div>
+                                <div class="projclass">
+                                    <h2>{{ post['tags']|join(', ') }}</h2>
+                                </div>
+                                <div class="projdescription">
+                                    <p>{{ post['abstract'] }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+                <hr>
+        {% endfor %} -->
+    </div>
+    <!-- important to put this at the end -->
+    <script type="text/javascript" class="cards" src="/assets/js/card.js"></script>
+{% endblock content %}

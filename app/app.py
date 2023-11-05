@@ -21,4 +21,7 @@ with open('publications.html', 'wb') as f:
     f.write(template.render(headerimg='/assets/img/covers/maincover.jpg',
                             sections=publication_infos).encode('utf-8'))
 
-# render research.html with layout articles-card.html
+# render research.html with layout research.html
+template = env.get_template('research.html')
+with open('research.html', 'wb') as f:
+    f.write(template.render(headerimg='/assets/img/covers/maincover.jpg').encode('utf-8'))
