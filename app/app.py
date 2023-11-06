@@ -1,5 +1,6 @@
 from jinja2 import Environment, FileSystemLoader
 from post_infos import get_publication_infos
+from post_infos import get_research_infos
 
 # load layout folder
 env = Environment(loader=FileSystemLoader(['layout', '.']))
@@ -23,5 +24,7 @@ with open('publications.html', 'wb') as f:
 
 # render research.html with layout research.html
 template = env.get_template('research.html')
+research_infos = get_research_infos()
 with open('research.html', 'wb') as f:
-    f.write(template.render(headerimg='/assets/img/covers/maincover.jpg').encode('utf-8'))
+    f.write(template.render(headerimg='/assets/img/covers/maincover.jpg',
+                            posts=research_infos).encode('utf-8'))

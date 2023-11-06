@@ -15,9 +15,9 @@
 
 {% block content %}
     <div id="offsetheader" style="background-image: url({{ headerimg }});">
-        <div class="header-temp">
+        <!-- <div class="header-temp">
             <p>The Research page is WIP.<br>See you soon.</p>
-        </div>
+        </div> -->
     </div>
     <div id="slogan">
         <div id="slogan-title">
@@ -52,30 +52,29 @@
                 sustainable, human-centric future, where innovation converges with responsibility to shape a world that uses its
                 natural resources more responsibly and efficiently.”</p>
         </div>
+        <hr>
     </div>
+
     <div id="content">
-        <!-- {% for section in sections %}
-                <div class="row">
-                    <h1 class="sectionhead">{{ section['sectionname'] }}</h1>
-                    {% for post in section['posts'] %}
-                        <a class="column" href="{{ post['url'] }}">
-                            <div class="coverimg" style="background-image: url({{ post['cover image'] }});"></div>
-                            <div class="words">
-                                <div class="projtitle">
-                                    <h1>{{ post['title'] }}</h1>
-                                </div>
-                                <div class="projclass">
-                                    <h2>{{ post['tags']|join(', ') }}</h2>
-                                </div>
-                                <div class="projdescription">
-                                    <p>{{ post['abstract'] }}</p>
-                                </div>
-                            </div>
-                        </a>
-                    {% endfor %}
-                </div>
-                <hr>
-        {% endfor %} -->
+        <div class="row">
+            {% for post in posts %}
+                <a class="column" href="{{ post['link'] }}" target="_blank">
+                    <div class="coverimg" style="background-image: url({{ post['coverimg'] }});"></div>
+                    <div class="words">
+                        <div class="projtitle">
+                            <h1>{{ post['title'] }}</h1>
+                        </div>
+                        <div class="projclass">
+                            <h2>{{ post['jornal'] }}</h2>
+                        </div>
+                        <div class="projdescription">
+                            <p>{{ post['abstract'] }}</p>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <hr>
     </div>
     <!-- important to put this at the end -->
     <script type="text/javascript" class="cards" src="/assets/js/card.js"></script>

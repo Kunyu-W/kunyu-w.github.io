@@ -23,7 +23,7 @@ body, html {
     z-index: -99;
 }
 
-.header-temp {
+/* .header-temp {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -38,7 +38,7 @@ body, html {
     text-align: center;
     margin: 0;
     color: #fff;
-}
+} */
 
 #content {
     position: relative;
@@ -104,13 +104,13 @@ a.column h1 {
 }
 
 a.column h2 {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 0.8rem;
 }
 
 a.column p {
     padding-top: 1rem;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1rem;
     opacity: 0;
     overflow: hidden;
@@ -189,6 +189,7 @@ div#slogan {
 
 div#slogan-title {
     width: 50%;
+    margin: auto auto 20px auto;
 }
 
 p.slogan-subtitle {
@@ -206,6 +207,9 @@ span.slogan-subtitle-head {
 div#slogan-img {
     width: 50%;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div#slogan-img img {
@@ -224,4 +228,14 @@ div#slogan-content p {
 
 div#slogan:hover {
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05), 2px 4px 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+    div#slogan-title {
+        width: 100%;
+    }
+
+    div#slogan-img {
+        width: 100%;
+    }
 }
