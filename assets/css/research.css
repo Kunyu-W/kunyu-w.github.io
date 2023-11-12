@@ -214,7 +214,7 @@ div#slogan-img {
 
 div#slogan-img video {
     height: 100%;
-    
+    overflow: hidden;
 }
 
 div#slogan-content {
