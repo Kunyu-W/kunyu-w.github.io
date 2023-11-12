@@ -82,7 +82,7 @@ div.article img {
     /* margin: auto; */
     /* background-position: center center; */
     /* background-size: contain; */
-    max-height: 20rem;
+    /* max-height: 20rem; */
     width: 100%;
 }
 
@@ -124,4 +124,8 @@ div.article a.readmore:hover {
     color: var(--mainbg);
     transition: .3s;
     color: var(--mainbg);
+}
+
+div.row-seg {
+    padding: 10px;
 }

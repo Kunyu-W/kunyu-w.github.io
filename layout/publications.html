@@ -22,13 +22,13 @@
             {% for post in section['posts'] %}
                 <div class="article">
                     <div class="row">
-                        <div class="col-md-9 col-sm-12">
+                        <div class="col-md-9 col-sm-12 row-seg">
                             <h1>{{ post['title'] }}</h1>
                             <h2>{{ post['jornal'] }}</h2>
                             <p>{{ post['author'] }}</p>
                             <a href="{{ post['url'] }}" class="readmore" target="_blank">Read More</a>
                         </div>
-                        <div class="col-md-3 col-sm-8">
+                        <div class="col-md-3 col-sm-8 row-seg">
                             {% if post['coverimg'] %}
                                 <img src="{{ post['coverimg'] }}" alt="article cover">
                             {% endif %}

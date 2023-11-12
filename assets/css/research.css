@@ -212,8 +212,9 @@ div#slogan-img {
     align-items: center;
 }
 
-div#slogan-img img {
+div#slogan-img video {
     height: 100%;
+    
 }
 
 div#slogan-content {
@@ -230,12 +231,16 @@ div#slogan:hover {
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.05), 2px 4px 10px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     div#slogan-title {
         width: 100%;
     }
 
     div#slogan-img {
         width: 100%;
+    }
+
+    p.slogan-subtitle {
+        padding: 0 10% 0 10%;
     }
 }
