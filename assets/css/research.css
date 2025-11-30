@@ -100,7 +100,7 @@ a.column h1, a.column h2, a.column p {
 
 a.column h1 {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 a.column h2 {
@@ -117,6 +117,7 @@ a.column p {
     /* text-overflow: ellipsis; */
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
+    line-clamp: 5;
     display: none;
 }
 
