@@ -46,10 +46,11 @@ h1.sectiontitle {
 div.article {
     width: 90%;
     margin: auto;
-    padding: .2rem;
+    padding: .2rem .8rem;
     /* background-color: #ffffff; */
     color: var(--mainfontcolor);
-    overflow: hidden;
+    overflow: visible;
+    box-sizing: border-box;
 }
 
 div.article h1 {
