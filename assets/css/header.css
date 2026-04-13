@@ -10,8 +10,17 @@
     box-shadow: 0 2px 2px 0 rgb(207 216 221 / 70%);
 }
 
+/* desktop navigation */
+#navbar.navori {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 3rem;
+}
+
 #navbar.navori a {
-    float: left;
+    float: none;
     display: block;
     color: var(--mainfontcolor);
     text-align: center;
@@ -25,6 +34,7 @@
     cursor: pointer;
     font-size: 1rem;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 #navbar.navori a.dropicon {
@@ -33,35 +43,47 @@
 
 #navbar.navori a.homenav {
     position: relative;
-    width: 18%;
-    margin-left: 11%;
-    margin-right: 11%;
+    width: 120px;
+    margin-left: 0;
+    margin-right: 0;
+    flex: 0 0 auto;
 }
 
 #navbar.navori a.homenav img {
-    position: absolute;
+    position: relative;
     height: 3rem;
-    top: 0.25rem;
-    /* margin-right: 15px; */
-    left: 20%;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 0 auto;
 }
 
 #navbar.navori a.homenav p {
     position: absolute;
     top: -0.5rem;
-    left: calc(25% + 0.5rem);
+    left: calc(100% + 0.5rem);
     cursor: pointer;
     font-size: 1.2rem;
 }
 
+#navbar.navori div.othernav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
 #navbar.navori div.othernav a {
-    width: 18%;
+    width: auto;
     font-weight: 400;
     /* border-left-style: solid;
     border-left-color: #fffcf9;
     border-left-width: 1px; */
 }
 
+/* mobile / responsive navigation */
 #navbar.navres a {
     float: left;
     display: block;
