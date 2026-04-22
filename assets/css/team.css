@@ -386,3 +386,35 @@ div#slogan:hover {
         align-items: flex-start;
     }
 }
+.lab-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.lab-photo-item {
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+.lab-photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.8rem;
+}
+
+.lab-photo-item .photo-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--mainfontcolor);
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .lab-photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
