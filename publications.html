@@ -959,7 +959,21 @@
             <p>Exchange Link: <a class="exlink" href="https://www.zmei.moe/" target="_blank">zmei.moe</a></p>
     </div>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const articles = Array.from(document.querySelectorAll("#content .article"));
+    let n = 1;
 
+    for (let i = articles.length - 1; i >= 0; i--) {
+        const title = articles[i].querySelector("h1");
+        if (title) {
+            title.innerHTML = "[" + n + "] " + title.innerHTML;
+            n++;
+        }
+    }
+});
+</script>
+    
 </body>
 
 </html>
