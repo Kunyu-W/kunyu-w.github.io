@@ -70,6 +70,27 @@ section#home div.myinfo {
 .hero-left .mysocial {
     justify-content: flex-start;
 }
+.hero-social-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.hero-social-row .socialdecorationline {
+    flex: 1;
+    height: 1px;
+    margin: 0;
+    background-color: var(--mainfontcolor);
+}
+
+.hero-social-row .mysocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
 
 .hero-right {
     display: flex;
@@ -93,9 +114,7 @@ section#home div.myinfo {
     aspect-ratio: 16 / 10;
     object-fit: cover;
 }
-.myinfo h1, .myinfo h2, .myinfo h3 {
-    margin: 10px auto;
-}
+
 
 section#home div.infopic {
     background-image: url('/assets/img/authorinfo/touxiang.jpg');
