@@ -386,11 +386,13 @@ div#slogan:hover {
         align-items: flex-start;
     }
 }
+
 .lab-photo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
-    margin-top: 0.8rem;
+    width: 66%;
+    margin: 0.8rem auto 0 auto;
 }
 
 .lab-photo-item {
@@ -416,5 +418,6 @@ div#slogan:hover {
 @media screen and (max-width: 768px) {
     .lab-photo-grid {
         grid-template-columns: 1fr;
+        width: 100%;
     }
 }
