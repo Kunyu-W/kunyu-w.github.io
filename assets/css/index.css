@@ -94,8 +94,9 @@ section#home div.myinfo {
 
 .hero-right {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 24px;
 }
 
 .hero-video-wrap {
