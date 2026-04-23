@@ -426,30 +426,6 @@ hr {
 }
 
 @media screen and (max-width: 992px) {
-    section#home div.myinfo {
-        width: 94%;
-        padding: 28px 24px;
-    }
-
-    .hero-split {
-        grid-template-columns: 1fr;
-        gap: 1.8rem;
-    }
-
-    .hero-left .myname {
-        font-size: 2.4rem;
-    }
-
-    .hero-left .mydegrees {
-        font-size: 1.05rem;
-    }
-
-    .hero-right {
-        order: -1;
-    }
-}
-
-@media screen and (max-width: 768px) {
     section#home {
         height: auto;
         min-height: 100vh;
@@ -459,20 +435,99 @@ hr {
     }
 
     section#home div.myinfo {
-        width: 94%;
-        padding: 22px 18px;
+        width: 100%;
+        padding: 28px 24px;
+    }
+
+    .hero-split {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .hero-right {
+        order: -1;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .hero-video-wrap {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .hero-left {
+        width: 100%;
+        align-items: center;
     }
 
     .hero-left .myname {
-        font-size: 2rem;
+        font-size: 2.3rem;
+        line-height: 1.15;
+        white-space: normal;
+        text-align: center;
+        margin: 0 0 0.8rem 0;
     }
 
     .hero-left .mydegrees {
-        font-size: 1rem;
-        line-height: 1.4;
+        font-size: 1.05rem;
+        line-height: 1.45;
+        white-space: normal;
+        text-align: center;
+        margin: 0.3rem 0;
     }
 
-    .hero-left .socialdecorationline {
-        width: 180px;
+    .hero-social-row {
+        width: 100%;
+        max-width: 520px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section#home div.myinfo {
+        padding: 20px 16px;
+    }
+
+    .hero-left .myname {
+        font-size: 1.8rem;
+        line-height: 1.18;
+        white-space: normal;
+        text-align: center;
+        word-break: break-word;
+    }
+
+    .hero-left .mydegrees {
+        font-size: 0.95rem;
+        line-height: 1.45;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .hero-video-wrap {
+        max-width: 100%;
+        border-radius: 14px;
+    }
+
+    .hero-social-row {
+        gap: 8px;
+        margin-top: 10px;
+        flex-wrap: nowrap;
+    }
+
+.hero-social-row .socialdecorationline {
+    display: none;
+}
+
+    .hero-social-row .mysocial {
+        gap: 2px;
+    }
+
+    .hero-social-row .mysocial a {
+        padding: 4px 6px;
+    }
+
+    .hero-social-row .mysocial svg.social {
+        width: 20px;
+        height: 20px;
     }
 }
